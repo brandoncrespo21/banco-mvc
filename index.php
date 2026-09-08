@@ -20,7 +20,6 @@ switch ($accion) {
         break;
 
     default:
-        echo "Bienvenido al Sistema Bancario . <br>";
-        echo "Prueba en la URL con: ?accion=login&u=admin&p=1234";
+        $controlador->inicio();
         break;
 }
