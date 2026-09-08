@@ -7,9 +7,9 @@ class UsuarioModel {
     }
 
     public function verificarLogin($usuario, $password) {
-       $sql = "SELECT * FROM usuarios = '$usuario' AND password = '$password'";
-       $resultado = $this ->db->query($sql);
-       return $resultado-> fetch_assoc();
+       $sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND password = '$password'";
+       $resultado = $this->db->query($sql);
+       return $resultado->fetch_assoc();
     }
 
     public function actualizarSaldo($id, $nuevoSaldo) {
